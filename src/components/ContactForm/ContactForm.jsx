@@ -5,7 +5,7 @@ import { BsPhone, BsPerson } from "react-icons/bs";
 
 import css from "./ContactForm.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/contacts/contactsOps";
+import { addContact } from "../../redux/contacts/operations";
 import { initialValues } from "../../redux/contacts/constants";
 import { selectIsAddingContact } from "../../redux/contacts/selectors";
 import { CircularProgress } from "@mui/material";
