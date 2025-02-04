@@ -3,7 +3,7 @@ import { FaRegEdit } from "react-icons/fa";
 
 import css from "./Contact.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteContact, updateContact } from "../../redux/contacts/contactsOps";
+import { deleteContact, updateContact } from "../../redux/contacts/operations";
 import ConfirmForm from "../ConfirmForm/ConfirmForm";
 import { useState } from "react";
 import EditForm from "../EditForm/EditForm";
