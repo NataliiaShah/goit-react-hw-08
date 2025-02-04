@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initialStateContacts } from "../contacts/constants";
-import { addContact, deleteContact, fetchContacts, updateContact } from "../contacts/operations";
+import { addContact, deleteContact, fetchContacts, updateContact } from "../contacts/contactsOps";
 
 const handleRejected = (state, action) => {
     state.isLoading = false;
