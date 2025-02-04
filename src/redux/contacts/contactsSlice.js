@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { initialStateContacts } from "./constants";
+import { initialStateContacts } from "../contacts/constants";
 import { addContact, deleteContact, fetchContacts, updateContact } from "../contacts/operations";
 
 const handleRejected = (state, action) => {
