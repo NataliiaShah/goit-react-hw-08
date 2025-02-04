@@ -1,0 +1,40 @@
+.listContacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.itemContact {
+    flex-basis: calc((100%) / 1);
+
+    border-radius: 10px;
+    border: 1px solid #00afd7;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+
+.infoText {
+    font-size: 25px;
+    line-height: 1.33;
+    letter-spacing: -.01em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .itemContact {
+        flex-basis: calc((100% - 10px) / 2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .itemContact {
+        flex-basis: calc((100% - 20px) / 3);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .itemContact {
+        flex-basis: calc((100% - 30px) / 4);
+    }
+}

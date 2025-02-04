@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+    width: 350px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -.04em;
+    color: rgb(71, 71, 71);
+
+    padding-top: 66%;
+    margin-bottom: 10px;
+}
+
+.btnContacts {
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #e1dae9;
+    box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
+    padding: 12px 30px;
+    border: none;
+    color: #00afd7;
+
+    transition: background-color .4s cubic-bezier(.4, 0, .2, 1), color .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.bgImg {
+    height: 100vh;
+    background-image: url('../../assets/img/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        position: absolute;
+        top: 47%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mainTitle {
+        width: 500px;
+        font-size: 55px;
+
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .bgImg {
+        height: 100vh;
+        background-image: url('../../assets/img/2.png'), url('../../assets/img/7492002.png');
+        background-position: bottom 0 right -110px;
+    }
+
+    .btnContacts {
+        padding: 15px 50px;
+    }
+
+    .btnContacts:hover {
+        background-color: #00afd7;
+        color: #f0eafa;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .bgImg {
+        background-position: 40% 80%, right;
+    }
+}

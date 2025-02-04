@@ -1,0 +1,36 @@
+.bgImgContacts {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../assets/img/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+}
+
+.positionSection {
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    right: 5px;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .bgImgContacts {
+        height: 100vh;
+        background-image: linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.7)), url('../../assets/img/2.png'), url('../../assets/img/7492002.png');
+        background-position: bottom 0 right;
+    }
+
+    .positionSection {
+        top: 90px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .bgImgContacts {
+        background-position: 40% 80%, right;
+    }
+}

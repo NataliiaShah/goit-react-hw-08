@@ -1,0 +1,105 @@
+.loginBoy {
+    display: none;
+}
+
+.loginLamp {
+    display: none;
+}
+
+.buttonSignup {
+    border-radius: 50px;
+    background-color: #e1dae9;
+    box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
+    padding: 10px 20px;
+    border: none;
+    color: #00afd7;
+
+    transition: background-color .4s cubic-bezier(.4, 0, .2, 1), color .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.buttonSignup:hover {
+    background-color: #e87438;
+    color: #f0eafa;
+}
+
+@media screen and (min-width: 768px) {
+    .LogUpForm {
+        width: 700px;
+        height: 450px;
+        background-color: #00afd7;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .thumbFormRegist {
+        position: absolute;
+        top: 16%;
+        left: 10px;
+        width: 350px;
+    }
+
+    .bgImgForm {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 300px;
+        height: 430px;
+        background-image: url('../../assets/img/sign-up/Rectangle-orange.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loginBoy {
+        display: block;
+        width: 400px;
+        position: absolute;
+        top: 80px;
+        right: -40px;
+    }
+
+    .loginLamp {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: -25px;
+        width: 100px;
+        height: 150px;
+    }
+
+    .buttonSignup {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .LogUpForm {
+        width: 850px;
+        height: 500px;
+    }
+
+    .bgImgForm {
+        width: 400px;
+        height: 530px;
+    }
+
+    .thumbFormRegist {
+        top: 28%;
+        left: 30px;
+    }
+
+    .loginBoy {
+        top: 70px;
+        right: -30px;
+        width: 510px;
+    }
+
+    .loginLamp {
+        top: -80px;
+        width: 174px;
+        height: 300px;
+    }
+
+    .buttonSignup {
+        padding: 15px 20px;
+    }
+}
