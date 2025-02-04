@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { useId, useState } from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import style from "../LoginForm/LoginForm.module.css";
-import styleRegist from "./RegisterForm.module.css";
+import styleRegist from "./RegistrationForm.module.css";
 import { RiLockPasswordLine, RiUser3Line } from "react-icons/ri";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -28,7 +28,7 @@ const validation = Yup.object().shape({
     ),
 });
 
-const RegisterForm = () => {
+const RegistrationForm = () => {
   const dispatch = useDispatch();
   const emailId = useId();
   const passwordId = useId();
@@ -156,4 +156,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default RegistrationForm;

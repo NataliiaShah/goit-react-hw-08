@@ -3,14 +3,14 @@ import { useAuth } from "../../hooks/useAuth";
 import AuthNav from "../AuthNav/AuthNav";
 import Navigation from "../Navigation/Navigation";
 import UserMenu from "../UserMenu/UserMenu";
-import style from "./AppHeader.module.css";
+import style from "./AppBar.module.css";
 import clsx from "clsx";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const AppHeader = () => {
+const AppBar = () => {
   const { isLoggedIn } = useAuth();
   const [scrolled, setScrolled] = useState(false);
 
@@ -39,4 +39,4 @@ const AppHeader = () => {
   );
 };
 
-export default AppHeader;
+export default AppBar;
