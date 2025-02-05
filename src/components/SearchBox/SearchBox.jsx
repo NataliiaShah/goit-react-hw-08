@@ -3,7 +3,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { selectNameFilter } from "../../redux/filters/selectors";
 import { initialStateFilter } from "../../redux/filters/constants";
-import { changeFilter } from "../../redux/filters/filtersSlice";
+import { changeFilter } from "../../redux/filters/slice";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
