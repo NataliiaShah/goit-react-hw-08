@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initialStateContacts } from "./constants";
-import { addContact, deleteContact, fetchContacts, updateContact } from "./operations";
+import { addContact, deleteContact, fetchContacts, updateContact, logOut } from "./operations"; // Додайте logOut
 
 const handleRejected = (state, action) => {
     state.isLoading = false;
     state.error = action.payload;
     state.isDeleteContact = null;
     state.isEditContact = null;
-}
+};
 
 const contactsSlice = createSlice({
     name: 'contacts',
@@ -62,8 +62,23 @@ const contactsSlice = createSlice({
                 state.isEditContact = false;
             })
             .addCase(updateContact.rejected, handleRejected)
+            
+            .addCase(logOut.pending, (state) => {
+                state.isLoading = true; 
+            })
+            .addCase(logOut.fulfilled, (state) => {
+                state.items = []; 
+                state.isLoading = false; 
+                state.error = null; 
+                state.isEditContact = null; 
+                state.isDeleteContact = null; 
+                state.updatingItem = null; 
+            })
+            .addCase(logOut.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.payload;
+            });
     }
-})
-
+});
 
 export const contactsReducer = contactsSlice.reducer;
